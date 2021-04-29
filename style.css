@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+div {
+    display: block;
+    border: 1px solid black;
+    padding: 15px;
+}
+    /*------small screen size -----S*/
+
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: red;
+        font-size: 16px;
+    }
+    div {
+        width: 100%;
+    }
+}
+/*------ medium screen size ------*/
+@media screen and (min-width: 301px) and (max-width: 768px) {
+body {
+  background-color: green;
+  font-size: 18px;
+}
+#small {
+    width: 66%;
+}
+
+#large {
+    width: 100%;
+}
+#medium {
+    width: 34%;
+}
+}
+/*----- large screen size------  */
+@media screen and (min-width: 769px) {
+body {
+  background-color: blue;
+ font-size: 20px;
+ flex-wrap: nowrap;
+}
+
+}
